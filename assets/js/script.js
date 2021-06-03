@@ -90,3 +90,22 @@ hours.map((_, i) => {
       saveTask(i, textAreaValue);
     });
 });
+
+let myFavorites = [
+  {
+    favorited: true,
+    name: "mommy milkers",
+  },
+  {
+    favorited: false,
+    name: "justin ass",
+  },
+];
+
+myFavorites.map((favorite, i) => {
+  if (favorite.favorited) {
+    return `
+    <option></option>
+    `;
+  }
+});
